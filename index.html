@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,6 +24,14 @@
 
 <body>
 
+    <!-- loader section -->
+    <div class="loader">
+        <div class="inner">
+
+        </div>
+    </div>
+
+    <!-- title section -->
     <div id="slides">
 
         <div class="overlay">
@@ -28,19 +42,6 @@
             <img src="images/Image1.jpg" alt="">
             <img src="images/Image2.jpg" alt="">
             <img src="images/Image3.jpg" alt="">
-        </div>
-
-
-        <div class="media">
-            <a href="https://www.linkedin.com/in/vidyashreetarikere/" target="_blank"><i class="fab fa-linkedin"
-                    style="font-size:48px;"></i></a>
-
-            <a href="https://github.com/VidyashreeTarikere" target="_blank"><i class="fab fa-github"
-                    style="font-size:48px;"></i></i></a>
-
-            <a href="images/files/My_resume.pdf" download="Vidyashree_Tarikere_CV" class="fab"><button class="resume">My
-                    Resume</button></a>
-
         </div>
 
         <div class="titleMessage">
@@ -57,8 +58,273 @@
         </nav>
     </div>
 
+    <!-- navigation menu -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">VT</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-media nav-link" href="https://www.linkedin.com/in/vidyashreetarikere"
+                            onclick="window.open('https://www.linkedin.com/in/vidyashreetarikere','_blank')"><img
+                                src="images/icons/linkedin.png" alt="" /></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-media nav-link" href="https://github.com/VidyashreeTarikere"
+                            onclick="window.open('https://github.com/VidyashreeTarikere','_blank')"><img
+                                src="images/icons/github.png" alt="" /></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-media nav-link resume" href="images/files/My_resume.pdf"
+                            onclick="window.open('images/files/My_resume.pdf','_blank')"
+                            download="Vidyashree_Tarikere_CV" class="fab">Resume</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- about section -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="aboutImage" src="images/My_Image.jpg" alt="">
+                </div>
+
+                <div class="col-md-7">
+                    <h2>About Me</h2>
+
+                    <p class="aboutP">Hello! I'm Vidyashree, a web developer based in Ghent, Belgium.</p>
+                    <p class="aboutP">I enjoy creating things that live on the Internet, like websites. My goal is to
+                        always build
+                        products that provide performant and pixel-perfect experience.</p>
+                    <p class="aboutP">A short while ago after moving to Belgium, I joined BeCode where I learnt and
+                        worked on wide
+                        variety of interseting technologies and projects on a daily basis.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- technical section -->
+    <div id="skills" class="skillsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="skillsHeading">Technical Skills</h2>
+                    <p class="skillsHeading">Here are a few technologies I've been working with:</p>
+                </div>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="skill">
+                        <span class="chart" data-percent="70">
+
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">HTML</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="70">
+
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">(S)CSS</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="75">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">Bootstrap</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="60">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">JavaScript(ES6+)</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="50">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">React</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="60">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">PHP</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="50">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">Laravel</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="60">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">MySQL</h4>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="70">
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 class="skillsContent">Git</h4>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- experience section -->
+    <div id="experience" class="experienceSection section">
+        <div class="container">
+            <div class="row">
+                <h2 class="experienceHeading">Where I've worked</h2>
+                <div class="col-md-5">
+                    <button class="experienceBtn becode">-> BeCode</button>
+                </div>
+                <div class="col-md-7">
+                    <div id="becode" class="experienceDiv">
+                        <p class="experienceP">Junior Web Developer @ BeCode<br>October 2020 - Present</p>
+                        <ul>
+                            <li>Developed code for websites which were designed to learn using HTML, CSS, Sass,
+                                JavaScript
+                                and PHP.</li>
+                            <li>Learnt frameworks like Bootstrap, React, next.js, Typescript, Laravel.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" col-md-5">
+                    <button class="experienceBtn nieit">-> NIE Institute Of Technology</button>
+                </div>
+                <div class="col-md-7">
+                    <div id="nieit" class="experienceDiv">
+                        <p class="experienceP">Assistant Professor @ NIE Institute Of Technology<br>Febraury 2019 -
+                            January 2020</p>
+                        <ul>
+                            <li>Course instructor for Object-Oriented Concepts, Discrete Mathematical
+                                Structures, Software-Architecture & Design Patterns.
+                            </li>
+                            <li>Practical session instructor for Analysis & Design of Algorithms,
+                                Machine Learning, Data Structures.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" col-md-5">
+                    <button class="experienceBtn nie">-> NIE First Grade College</button>
+                </div>
+                <div class="col-md-7">
+                    <div id="nie" class="experienceDiv">
+                        <p class="experienceP">Lecturer @ NIE First Grade College<br>August 2018 -
+                            March 2019</p>
+                        <ul>
+                            <li>Course instructor for Problem Solving with C-Programming language,
+                                Discrete Mathematical Structures, Data Structures, Operating Systems.
+                            </li>
+                            <li>Practical session instructor for C-Programming Language, Data
+                                Structures Using C, Operating Systems.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" col-md-5">
+                    <button class="experienceBtn vsr">-> VSR Future Tech Solutions</button>
+                </div>
+                <div class="col-md-7">
+                    <div id="vsr" class="experienceDiv">
+                        <p class="experienceP">VSR Future Tech Solutions<br>August 2017 -
+                            July 2018</p>
+                        <ul>
+                            <li>Experimentation on data collection in wireless sensor networks with
+                                cluster-based energy efficiency.
+                            </li>
+                            <li>Increased the lifetime of the wireless sensor network analytically.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Countdown Section -->
+    <div id="countDown" class="countDownSection section">
+        <div class="container text-center">
+            <h2 class="countDownHeading">100 Days Of Coding</h2>
+            <div class="countdown text-center" id="count">
+                <div id="day">NA</div>
+                <div id="hour">NA</div>
+                <div id="minute">NA</div>
+                <div id="second">NA</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+            <p class="subHeading">Like what you see?</p>
+            <h2>I'd love to hear from you!</h2>
+            <a href="mailTo:tvvidyashree@gmail.com" class="contactBtn">Get in touch!</a>
+        </div>
+    </div>
+
+    <!-- copyright section -->
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>Designed & Built by Vidyashree Tarikere</p>
+        </div>
+    </div>
+
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/typed.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
         crossorigin="anonymous"></script>

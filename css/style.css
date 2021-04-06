@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    color: #333333;
+    background-color: #f0f2f8;
+    letter-spacing: 1px;
+}
+
 .overlay{
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 3;
     background-color: rgba(0,0,0,0.4);
+    
 }
 
 .slides-navigation{
@@ -38,16 +48,15 @@
 }
 
 .heading p{
-    color: #ffffff;
+    color: #f0f2f8;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 7px;
 }
 
 .hi{
     font-size: 40px;
-    margin-left: 850px;
-    text-align: left;
+    text-align: center;
 }
 
 .main{
@@ -66,20 +75,259 @@
     height: 250px;
     top: 5%;
     z-index: 5;
-    color: #ffffff;
+    color: #f0f2f8;
     text-align: right;
 }
 
-.fab{
-    color: #ffffff;
+#slides .fab{
+    color: #f0f2f8;
     margin-right: 20px;
 }
 
-.resume{
-    padding: 10px;
-    font-size: 40px;
-    background-color: #ffffff;
-    color: #000000;
-    border: #000000;
-    border-radius: 20px;
+
+
+
+
+.section{
+    padding: 100px 0;
+}
+
+.aboutImage{
+    max-width: 100%;
+}
+
+.section h4,
+.titleMessage p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.aboutP{
+    font-size: 19px;
+}
+
+.skillsSection{
+    background-color: #233554;
+    color: #64FFDA;  
+}
+
+.skillsHeading{
+    margin-bottom: 20px;
+}
+
+.skillsContent{
+    margin-top: 15px;
+}
+
+.skill{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.chart{
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent{
+    color: #64FFDA;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.experienceHeading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experienceBtn:hover{
+    color: #233554;
+    font-style: italic;
+}
+
+.experienceP{
+    font-style: italic;
+    font-weight: 200;
+}
+.experienceBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    text-align: left;
+}
+
+.experienceDiv{
+    font-size: 19px;
+    
+}
+
+#becode,
+#nieit,
+#nie,
+#vsr{
+    display: none;
+}
+
+.countDownSection{
+    background-color: #233554;
+    color: #64FFDA;
+}
+
+.countDownHeading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.countdown div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #64FFDA;
+    color:#233554;
+    margin: 0 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.countdown div::before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #f0f2f8;
+    color: #233554;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.countdown #day::before{
+    content: 'Days';
+}
+
+.countdown #hour::before{
+    content: 'Hours';
+}
+
+.countdown #minute::before{
+    content: 'Min';
+}
+
+.countdown #second::before{
+    content: 'Sec';
+}
+
+.contactSection{
+    background-color:#f0f2f8;
+    /* color: #64FFDA; */
+}
+
+.contactBtn{
+    color:  black;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    /* border: 1px solid  #64FFDA; */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contactBtn:hover{
+    background-color:  #64FFDA;
+    color: #233554;
+    text-decoration: none;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.copyrightSection{
+    background-color: #233554;
+    color: #64FFDA;
+    padding: 30px 5px;
+}
+
+.copyrightSection p{
+    margin: 0;
+}
+
+#navigation {
+    background-color:  #233554;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li{
+    padding: 0 10px;
+}
+
+#navigation li a{
+    color: #64FFDA;
+}
+
+.navbar-brand,
+.navbar-brand:hover{
+    color: #64FFDA;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../images/icons/menu.png);
+    background-size: 100%;
+}
+
+.fixedNav #navigation{
+    position: fixed;
+    top: 0;
+}
+
+.nav-item img,
+.nav-item .resume{
+    width: 25px;
+    height: 25px;
+   
+}
+
+.nav-item .resume{
+    text-decoration: none;
+}
+
+.nav-item .resume:hover{
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f2f8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.loader .inner{
+    width: 100%;
+    height: 100%;
+    background: url(../images/PortfolioLogo.gif) center center no-repeat transparent;
 }
